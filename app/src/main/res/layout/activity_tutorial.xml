@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tutorial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nickhuang1.matrix.Tutorial">
+
+    <TextView
+        android:text="Add/Subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView15" />
+
+    <TextView
+        android:text="In order to add a matrix with another matrix, they have to have equivalent dimensions. If they do have equivalent dimensions, then you will be producing a matrix with the same dimensions as the two matrices being added. Simply add the corresponding positions of each matrix and place them in the corresponding spot in the resulting matrix. Subtracting works the same way as addition except subtraction is involved."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView18"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="Multiplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView19" />
+
+    <TextView
+        android:text="In order to multiply two matrices together, the column count of the first matrix has to be equal to the row count of the second matrix being multiplied. For example, a 2X2 times a 2X4 would produce a 2X4. Just think of it like taking the outside values and making a matrix. In order to fill each row, you multiply the first row of the first matrix by the first column of the second and add it all up. You do this for each corresponding placement."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView20"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="Row Echelon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView21" />
+
+    <TextView
+        android:text="Row echelon is achieved by aiming to create a diagonal of numbers with the highest point of the diagonal at the left-most end and the end of the diagonal being at the right. You're aiming to create a descending stairs look. There are three row operations present. In order to simplify the matrix, you can use those row operations in order to simplify the matrix."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView22"
+        android:textSize="12sp" />
+
+    <Button
+        android:text="Start Over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView21"
+        android:id="@+id/button16" />
+</RelativeLayout>
